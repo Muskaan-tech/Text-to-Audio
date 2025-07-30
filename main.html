@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Text to Speech App</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      max-width: 400px;
+      margin: 40px auto;
+      padding: 2em;
+      background: #e0f7fa; /* Hex background color */
+      border-radius: 10px;
+      box-shadow: 0 4px 20px #0001;
+    }
+    textarea {
+      width: 100%;
+      min-height: 80px;
+      margin-bottom: 1em;
+      font-size: 1.1em;
+      background-color: #f0fcfd; /* Lighter than body background */
+      border: 1px solid #ccc;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    button {
+      font-size: 1em;
+      padding: 8px 20px;
+      border: none;
+      background: #0066cc;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:active {
+      background: #004b8d;
+    }
+  </style>
+</head>
+<body>
+  <h2>Text to Speech Converter</h2>
+  <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+  <br>
+  <button onclick="speakText()">🔊 Speak</button>
+
+  <script>
+    function speakText() {
+      const text = document.getElementById('textInput').value;
+      if (!text.trim()) {
+        alert('Please enter some text!');
+        return;
+      }
+      const utterance = new SpeechSynthesisUtterance(text);
+      window.speechSynthesis.speak(utterance);
+    }
+  </script>
+</body>
+</html>
