@@ -2,7 +2,7 @@
 
 A simple and elegant web app that converts user input text into speech using the browser's built-in SpeechSynthesis API.
 
-![Screenshot](screenshot.png) <!-- You can upload a screenshot and rename or link here -->
+![Screenshot](demo.png) <!-- You can upload a screenshot and rename or link here -->
 
 ## ✨ Features
 
