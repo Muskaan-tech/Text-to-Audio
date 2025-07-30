@@ -2,8 +2,8 @@
 
 A simple and elegant web app that converts user input text into speech using the browser's built-in SpeechSynthesis API.
 
-![App Preview]("Text-to-Audio
-/demo.png")
+![App Preview](demo.png)
+
 
 
 ## ✨ Features
